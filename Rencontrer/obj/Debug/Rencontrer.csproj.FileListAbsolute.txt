@@ -1,0 +1,5 @@
+C:\Users\PCQUARTO\Documents\0-Projetos\Rencontrer\Rencontrer\bin\Debug\Rencontrer.dll
+C:\Users\PCQUARTO\Documents\0-Projetos\Rencontrer\Rencontrer\bin\Debug\Rencontrer.pdb
+C:\Users\PCQUARTO\Documents\0-Projetos\Rencontrer\Rencontrer\obj\Debug\Rencontrer.csproj.CoreCompileInputs.cache
+C:\Users\PCQUARTO\Documents\0-Projetos\Rencontrer\Rencontrer\obj\Debug\Rencontrer.dll
+C:\Users\PCQUARTO\Documents\0-Projetos\Rencontrer\Rencontrer\obj\Debug\Rencontrer.pdb
