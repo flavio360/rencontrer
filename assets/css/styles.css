@@ -127,4 +127,32 @@ main {
     }
 }
 
+/* Estilo básico para a imagem no cabeçalho */
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contêiner da imagem para garantir que a imagem se ajuste ao contêiner */
+.image-container {
+    width: 100%;
+    overflow: hidden; /* Evita que a imagem saia do contêiner */
+}
+
+/* Estilo geral para todas as imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Exemplo de estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    .header img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
 
