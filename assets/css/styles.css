@@ -86,3 +86,45 @@ footer {
     text-align: center;
     padding: 10px;
 }
+/* Exemplo de consulta de mídia para telas pequenas */
+@media only screen and (max-width: 768px) {
+    /* Estilos específicos para dispositivos móveis */
+    body {
+        font-size: 16px;
+    }
+}
+/* Exemplo de media query */
+@media (max-width: 480px) {
+    /* Estilos para dispositivos móveis com largura de tela menor que 480px */
+}
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+    }
+    section {
+        width: 100%;
+    }
+}
+
+
