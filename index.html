@@ -5,54 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/xlsx/xlsx.full.min.js"></script> <!-- Inclua a biblioteca XLSX -->
     <script src="assets/js/scripts.js" defer></script>
 </head>
 <body>
-    <!-- Include Header -->
-    <!--#include virtual="components/header.html"-->
-
-    <main class="container">
-        <div class="row">
-            <!-- Menu Lateral (esquerda) -->
-            <div class="col-md-4">
-                <div class="menu">
-                    <button id="menu-toggle" class="btn btn-primary">Menu</button>
-                    <div id="menu-content" class="d-none">
-                        <!-- O conteúdo do menu será carregado aqui -->
-                    </div>
+    <!-- Header -->
+    <header>
+        <div id="header">
+            <img src="assets/images/logo.png" alt="Logo" id="logo">
+            <a href="#" id="contact-icon">
+                <img src="assets/images/contact-icon.png" alt="Contato">
+                <span>Contatos</span>
+            </a>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div id="main-content">
+            <!-- Menu Section -->
+            <div id="menu-section">
+                <button id="menu-toggle">Menu</button>
+                <div id="menu-content" class="d-none">
+                    <!-- O menu será carregado aqui -->
                 </div>
-            </div>
-
-            <!-- Conteúdo da Página (direita) -->
-            <div class="col-md-8">
-                <div id="menu-description">
-                    <button id="show-menu" class="btn btn-info">Conheça Nosso Menu</button>
-                    <div id="menu-info" class="d-none">
-                        <!-- O conteúdo da descrição do menu será carregado aqui -->
-                    </div>
+                <button id="show-menu">Conheça nosso Menu</button>
+                <div id="menu-info" class="d-none">
+                    <!-- Descrição do menu será carregada aqui -->
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Include Footer -->
-    <!--#include virtual="components/footer.html"-->
-
-    <!-- Modal Contato -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">Contatos</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Contatos serão carregados aqui -->
-                </div>
-            </div>
+    <!-- Footer -->
+    <footer>
+        <!-- Rodapé reutilizável -->
+        <div id="footer-content">
+            <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
