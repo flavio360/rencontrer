@@ -3,44 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <title>Rencontrer - Marmitas</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="libs/xlsx/xlsx.full.min.js"></script> <!-- Biblioteca XLSX -->
-    <script src="assets/js/scripts.js" defer></script>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <!-- Incluindo o cabeçalho reutilizável -->
-        <div id="header">
-            <!-- O conteúdo do header será carregado aqui -->
+        <div id="header-content">
+            <img src="assets/images/logo.png" alt="Rencontrer" id="logo">
+            <a href="#contatos" id="contact-icon">
+                <img src="assets/images/contact-icon.png" alt="Contatos">
+                <span>Contatos</span>
+            </a>
         </div>
     </header>
-    
+
     <!-- Main Content -->
     <main>
-        <div class="container">
-            <!-- Menu Section -->
-            <div id="menu-section" class="left-container">
-                <div id="menu-content">
-                    <!-- O menu será carregado aqui -->
-                </div>
-            </div>
-            
-            <!-- Menu Description Section -->
-            <div id="menu-info" class="right-container">
-                <button id="show-menu">Conheça nosso Menu</button>
-                <!-- Descrição do menu será carregada aqui -->
-            </div>
-        </div>
+        <aside>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#" id="menu-cardapio">Cardápio</a></li>
+                    <li><a href="#" id="menu-conheca">Conheça a Rencontrer</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section id="content">
+            <!-- Conteúdo carregado dinamicamente vai aqui -->
+        </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <!-- Incluindo o rodapé reutilizável -->
-        <div id="footer">
-            <!-- O conteúdo do footer será carregado aqui -->
-        </div>
+        <!-- Carregar footer de components/footer.html -->
     </footer>
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
