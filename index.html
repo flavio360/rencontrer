@@ -5,43 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="libs/xlsx/xlsx.full.min.js"></script> <!-- Inclua a biblioteca XLSX -->
+    <script src="libs/xlsx/xlsx.full.min.js"></script> <!-- Biblioteca XLSX -->
     <script src="assets/js/scripts.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header>
+        <!-- Incluindo o cabeçalho reutilizável -->
         <div id="header">
-            <img src="assets/images/logo.png" alt="Logo" id="logo">
-            <a href="#" id="contact-icon">
-                <img src="assets/images/contact-icon.png" alt="Contato">
-                <span>Contatos</span>
-            </a>
+            <!-- O conteúdo do header será carregado aqui -->
         </div>
     </header>
     
     <!-- Main Content -->
     <main>
-        <div id="main-content">
+        <div class="container">
             <!-- Menu Section -->
-            <div id="menu-section">
-                <button id="menu-toggle">Menu</button>
-                <div id="menu-content" class="d-none">
+            <div id="menu-section" class="left-container">
+                <div id="menu-content">
                     <!-- O menu será carregado aqui -->
                 </div>
+            </div>
+            
+            <!-- Menu Description Section -->
+            <div id="menu-info" class="right-container">
                 <button id="show-menu">Conheça nosso Menu</button>
-                <div id="menu-info" class="d-none">
-                    <!-- Descrição do menu será carregada aqui -->
-                </div>
+                <!-- Descrição do menu será carregada aqui -->
             </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <!-- Rodapé reutilizável -->
-        <div id="footer-content">
-            <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        <!-- Incluindo o rodapé reutilizável -->
+        <div id="footer">
+            <!-- O conteúdo do footer será carregado aqui -->
         </div>
     </footer>
 </body>

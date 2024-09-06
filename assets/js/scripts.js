@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Carregar header e footer
+    loadComponent('components/header.html', 'header-content');
+    loadComponent('components/footer.html', 'footer-content');
+
     const menuToggle = document.getElementById('menu-toggle');
     const menuContent = document.getElementById('menu-content');
     const showMenu = document.getElementById('show-menu');
@@ -20,14 +24,15 @@ document.addEventListener('DOMContentLoaded', function() {
         menuContainer.innerHTML = '';
 
         const menuItems = [
-            { text: 'Cardápio' },
-            { text: 'Conheça a Rencontrer' }
+            { text: 'Cardápio', id: 'menu-cardapio' },
+            { text: 'Conheça a Rencontrer', id: 'menu-rencontrer' }
         ];
 
         menuItems.forEach(item => {
             const menuItem = document.createElement('div');
             menuItem.classList.add('menu-item');
             menuItem.textContent = item.text;
+            menuItem.id = item.id;
             menuContainer.appendChild(menuItem);
         });
     }
@@ -56,5 +61,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             })
             .catch(error => console.error('Erro ao carregar o arquivo Excel:', error));
+    }
+
+    function loadComponent(url, containerId) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(containerId).innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o componente:', error));
     }
 });

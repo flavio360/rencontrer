@@ -1,46 +1,38 @@
-/* Exemplo de estilos básicos */
-.header {
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
     display: flex;
     justify-content: space-between;
+}
+
+.left-container, .right-container {
+    flex: 1;
+    margin: 10px;
+}
+
+.d-none {
+    display: none;
+}
+
+.menu-item {
     padding: 10px;
-    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
 }
 
-.logo img {
-    max-width: 100px;
+.menu-item:hover {
+    background-color: #f0f0f0;
 }
 
-.contact img {
-    width: 24px;
-    height: 24px;
-}
-
-.menu {
-    margin-top: 20px;
-}
-
-.menu-content {
-    display: none;
-}
-
-.menu-content.d-none {
-    display: none;
-}
-
-#menu-description {
-    margin-top: 20px;
-}
-
-#menu-info {
-    display: none;
-}
-
-#menu-info.d-none {
-    display: none;
-}
-
-.footer {
-    text-align: center;
+.menu-description {
     padding: 10px;
-    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    font-style: italic;
+}
+
+.menu-description:hover {
+    background-color: #f0f0f0;
 }
