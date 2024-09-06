@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amor Eterno</title>
-  <style>
-    /* Definindo a cor de fundo e a fonte */
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #fce4ec; /* Rosa suave para um toque leve e romântico */
-      color: #333;
-      font-family: 'Arial', sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* Centralizando o texto dentro de um container */
-    .container {
-      max-width: 600px;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8); /* Fundo branco suave */
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-      text-align: center;
-    }
-
-    /* Estilizando o texto */
-    h1 {
-      font-size: 2rem;
-      font-style: italic; /* Fonte em itálico */
-      line-height: 1.5;
-    }
-
-    /* Estilizando para dispositivos móveis */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.2rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Amor minha thururuquinha, a vida nem sempre é fácil, mas com você ao meu lado, tudo fica mais leve. Sei que juntos enfrentaremos desafios e celebraremos nossas vitórias. Te amo para sempre, minha futura esposa.</h1>
-  </div>
+    <!-- Include Header -->
+    <!--#include virtual="components/header.html"-->
+
+    <main class="container">
+        <div class="row">
+            <!-- Menu Lateral (esquerda) -->
+            <div class="col-md-4">
+                <div class="menu">
+                    <button id="menu-toggle" class="btn btn-primary">Menu</button>
+                    <div id="menu-content" class="d-none">
+                        <!-- O conteúdo do menu será carregado aqui -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conteúdo da Página (direita) -->
+            <div class="col-md-8">
+                <div id="menu-description">
+                    <button id="show-menu" class="btn btn-info">Conheça Nosso Menu</button>
+                    <div id="menu-info" class="d-none">
+                        <!-- O conteúdo da descrição do menu será carregado aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <!--#include virtual="components/footer.html"-->
+
+    <!-- Modal Contato -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contatos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contatos serão carregados aqui -->
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

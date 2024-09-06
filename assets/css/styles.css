@@ -1,0 +1,46 @@
+/* Exemplo de estilos básicos */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.contact img {
+    width: 24px;
+    height: 24px;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu-content {
+    display: none;
+}
+
+.menu-content.d-none {
+    display: none;
+}
+
+#menu-description {
+    margin-top: 20px;
+}
+
+#menu-info {
+    display: none;
+}
+
+#menu-info.d-none {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
