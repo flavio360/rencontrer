@@ -46,7 +46,7 @@ main {
 }
 
 aside {
-    width: 250px;
+    width: 0px;
     background-color: #f4f4f4; /* Cor neutra para contraste */
     padding: 10px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
@@ -203,9 +203,9 @@ main {
 }
 
 aside {
-    flex: 1;
-    min-width: 200px;
-    padding: 10px;
+    flex: 0.2;
+    min-width: 10px;
+    padding: 5px;
     background-color: #e9ecef;
 }
 
@@ -252,6 +252,77 @@ footer {
         flex: none;
         width: 100%;
     }
+}
+
+
+/*Me lateral da página principal*/
+
+#menu {
+    width: 250px; /* Define a largura do menu lateral */
+    position: fixed; /* Fixa o menu na lateral da página */
+    top: 0; /* Alinha o menu ao topo da página */
+    left: 0; /* Alinha o menu ao lado esquerdo da página */
+    height: 100%; /* Faz com que o menu ocupe a altura total da tela */
+    background-color: #f4f4f4; /* Cor de fundo do menu */
+    padding-top: 20px; /* Espaçamento interno no topo do menu */
+}
+
+#menu ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+#menu li {
+    padding: 10px 15px; /* Espaçamento interno dos itens */
+}
+
+#menu a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000; /* Define a cor do texto dos links */
+    display: block; /* Faz com que os links ocupem toda a largura do menu */
+}
+
+#menu a:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
+
+
+
+/*Carrocel da página index*/
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 300px;  /* Largura do cartão de visitas */
+    height: 180px; /* Altura do cartão de visitas */
+    object-fit: cover; /* Mantém a proporção das imagens sem distorcer */
+    border-radius: 10px; /* Adiciona cantos arredondados */
+    margin: 0 10px; /* Espaço entre os cartões */
+}
+
+.carousel-container::before, .carousel-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.carousel-container::after {
+    right: 0;
+    transform: rotateY(180deg);
 }
 
 

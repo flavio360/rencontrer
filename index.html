@@ -17,6 +17,12 @@
                 <span>Contatos</span>
             </a>
         </div>
+		
+		<div class="carousel-container">
+        <div class="carousel">
+            <!-- As imagens serão carregadas aqui dinamicamente -->
+        </div>
+    </div>
     </header>
 
     <!-- Main Content -->
@@ -54,7 +60,19 @@
         </div>
     </footer>
 
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/scripts.js"></script> <!-- Inclui o arquivo JavaScript -->
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+
+    <script>
+        // Chamando a função para inicializar o carrossel
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageDir = '/assets/images/Parceiros';
+            const imageList = ['parceiro1.jpg', 'parceiro2.jpg', 'parceiro3.jpg']; // Adicione as imagens
+
+            // Inicializa o carrossel
+            initCarousel('.carousel-container', imageDir, imageList, 4000);
+        });
+    </script>
 </body>
 </html>
