@@ -1,0 +1,7 @@
+[
+    "Parceiro0001.JFIF",
+    "Parceiro0002.PNG",
+    "Parceiro0003.JFIF",
+    "Parceiro0004.JFIF",
+    "Parceiro0005.JFIF"
+]

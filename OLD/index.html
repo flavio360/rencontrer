@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Menu e Carrossel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="header-content">
+            <img id="logo" src="caminho/para/seu/logo.png" alt="Logo">
+            <button id="menu-toggle">Menu</button>
+            <div id="contact-icon">
+                <img src="caminho/para/icon.png" alt="Contato">
+                <span>Contato</span>
+            </div>
+        </div>
+    </header>
+    <aside id="menu">
+        <ul>
+            <li><a href="#link1">Item 1</a></li>
+            <li><a href="#link2">Item 2</a></li>
+            <li><a href="#link3">Item 3</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section id="content">
+            <!-- Carrossel -->
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="caminho/para/imagem1.jpg" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="caminho/para/imagem2.jpg" alt="Imagem 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="caminho/para/imagem3.jpg" alt="Imagem 3">
+                    </div>
+                </div>
+                <button class="carousel-control prev">❮</button>
+                <button class="carousel-control next">❯</button>
+            </div>
+            <!-- Seu conteúdo aqui -->
+        </section>
+    </main>
+    <footer>
+        <!-- Seu rodapé aqui -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
