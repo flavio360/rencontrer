@@ -1936,28 +1936,32 @@ input, select, textarea {
 	#logo {
 		display: inline-block;
 	}
+	#logo h1 {
+    background: linear-gradient(45deg, #ff8c42, #ffa56b, #caff70); /* Degradê de laranja para verde */
+    color: #fff;
+    border-radius: 6px;
+    font-family: 'Oleo Script', serif; /* Fonte cursiva, artesanal e convidativa */
+    font-weight: 400;
+    padding: 0.25em 0.2em 0.25em 0.2em;
+    font-size: 3.25em;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    vertical-align: middle;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra para destacar o texto */
+	}
+	
+	#logo span {
+		font-family: 'Montserrat', sans-serif; /* Fonte sem serifa moderna e clara */
+		font-weight: 800;
+		line-height: 4.5em;
+		letter-spacing: 0.025em;
+		font-size: 0.9em;
+		vertical-align: middle;
+		margin: 0 0 0 1.25em;
+		color: #404248; /* Cor de texto neutra e contrastante para o subtítulo */
+	}
 
-		#logo h1 {
-			background: #ff4486;
-			color: #fff;
-			border-radius: 6px;
-			font-family: 'Oleo Script', serif;
-			font-weight: 400;
-			padding: 0.25em 0.2em 0.25em 0.2em;
-			font-size: 3.25em;
-			letter-spacing: 0.05em;
-			display: inline-block;
-			vertical-align: middle;
-		}
 
-		#logo span {
-			font-weight: 800;
-			line-height: 4.5em;
-			letter-spacing: 0.025em;
-			font-size: 0.9em;
-			vertical-align: middle;
-			margin: 0 0 0 1.25em;
-		}
 
 /* Nav */
 
