@@ -18,8 +18,15 @@ function lerArquivoTxt(caminho, idElemento) {
             console.error('Erro:', error);
         });
 }
-// Chama a função para carregar o arquivo após o carregamento do DOM
-document.addEventListener('DOMContentLoaded', () => {
-    lerArquivoTxt('assets/textos/txt-apresentacao-empresa.txt', 'txt-apresentacao-empresa');
-});
 
+function carregarTextos() {
+    const textos = [
+        { caminho: 'assets/textos/txt-apresentacao-empresa.txt', id: 'txt-apresentacao-empresa' },
+        { caminho: 'assets/textos/txt-missao-empresa.txt', id: 'txt-missao-empresa' },
+        { caminho: 'assets/textos/txt-valores-empresa.txt', id: 'txt-valores-empresa' }
+    ];
+
+    textos.forEach(texto => {
+        lerArquivoTxt(texto.caminho, texto.id); // Chama a função para cada item
+    });
+}
