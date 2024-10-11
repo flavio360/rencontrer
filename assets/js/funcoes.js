@@ -30,3 +30,15 @@ function carregarTextos() {
         lerArquivoTxt(texto.caminho, texto.id); // Chama a função para cada item
     });
 }
+
+
+
+
+
+//CARREGAR O FOOTER 
+
+function carregarFooter(caminho) {
+    $(document).ready(function() {
+        $("#footer-wrapper").load(caminho);
+    });
+}
